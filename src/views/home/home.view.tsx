@@ -1,14 +1,16 @@
 import React from 'react';
-import { useHomeState } from 'store/home';
+import { Header } from './header';
+import { Calculator } from './calculator';
 
-const HomeView: React.FC = () => {
-  const { title } = useHomeState();
-
+const HomeView = () => {
   return (
-    <h1 className="text-3xl top-5 font-bold underline">
-      This is home page. Zustand works! The blog title is:
-      {title}
-    </h1>
+    <>
+      <Header />
+      <main>
+        <Calculator />
+      </main>
+      <footer></footer>
+    </>
   );
 };
 

@@ -3,11 +3,8 @@ import { type Article } from 'models/queries';
 import { type PageProps } from 'gatsby';
 import { ThemeToggler } from 'gatsby-plugin-dark-mode';
 import { MDXProvider } from '@mdx-js/react';
-import { Link } from 'design-system/link';
 
-const components = {
-  Link,
-};
+const components = {};
 
 const ArticleTemplate: React.FC<PageProps<unknown, Article>> = (props) => {
   return (
